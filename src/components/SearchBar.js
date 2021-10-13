@@ -15,7 +15,6 @@ export function SearchBar({ value, onChangeText }) {
     onChangeText(text);
   };
   return (
-    <div>
       <Input
         id="search-input"
         type="text"
@@ -23,6 +22,5 @@ export function SearchBar({ value, onChangeText }) {
         onChange={handleChange}
         value={value}
       />
-    </div>
   );
 }

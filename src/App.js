@@ -16,6 +16,7 @@ const Title = styled.h2`
 function App() {
   const [results, setResults] = useState([]);
   const [searchBy, setSearchBy] = useState(DEFAULT_SEARCH_BY);
+  // eslint-disable-next-line
   const [error, setError] = useState(null);
 
   const fetchData = async (queryParams) => {
@@ -35,11 +36,9 @@ function App() {
 
   return (
     <div>
-      <div>
         <Title>React Search</Title>
         <SearchBar onChangeText={setSearchBy} value={searchBy} />
         <CardList results={results} />
-      </div>
     </div>
   );
 }
